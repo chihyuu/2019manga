@@ -26,7 +26,7 @@ args = parse_args()
 
 if utils.exist_list(args.list_dir):
     print('Lists exist in ./{0}. Use the test list.'.format(args.list_dir))
-    classes, _, test_list = utils.load_lists(args.list_dir)
+    classes, _, test_list, _ = utils.load_lists(args.list_dir)
 else:
     print('Lists do not exist.')
     exit(0)
